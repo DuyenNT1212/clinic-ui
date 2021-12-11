@@ -1,0 +1,8 @@
+version: '3.2'
+
+services:
+  clinicapp-ui:
+    restart: unless-stopped
+    image: clinic:0.0.1
+    container_name: clinic
+    ports: ['28099:80']
